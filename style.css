@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* la  barre de navigation*/
+nav{
+    display: flex;
+    background-color: #000;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+    padding: 0 25px;
+}
+
+nav .gauche{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .gauche img{
+    padding-top: 5px;
+}
+
+nav .gauche .ongles{
+    display: flex;
+    margin-left: 10px ;
+}
+nav .gauche .ongles p{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #909191;
+}
+nav .gauche .ongles p:hover{
+color: #fff;
+}
+nav .droit{
+    display: flex;
+   flex-wrap: wrap;
+}
+nav .droit p{
+    margin-left: 10px;
+    cursor: pointer;
+}
+/* fin la  barre de navigation*/
+/*le films et le séries*/
+.filmes-séries{
+    background-color: #000;
+    padding: 30px;
+}
+.filmes-séries .section{
+    margin-bottom: 55px;
+}
+.filmes-séries .section h2{
+    color: #fff;
+
+}
+.filmes-séries .section .list{
+    display: flex;
+    overflow-x: auto;
+    
+}
+
+
+
+
+
+
+
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black; /* color of the tracking area */
+  }
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 8, 8); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid black; /* creates padding around scroll thumb */
+  }
+.filmes-séries .section .list a {
+margin-left: 5px;
+transition: transform 0.25s;
+}
+.filmes-séries .section .list a:hover{
+    transform: scale(1.05);
+}
+.filmes-séries .section .list a img{
+    height: 140px;
+}
+footer{
+    background-color: #000 ;
+    padding: 25px 100px;
+    color: #909191;
+}
+footer .colonnes{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
